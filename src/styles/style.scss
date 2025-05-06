@@ -1,19 +1,21 @@
-@import "@coreui/coreui-pro/scss/functions";
+@use 'sass:color';
+@use "@coreui/coreui-pro/scss/functions";
 
 // If you want to override variables do it here
-@import "variables";
-@import "variables-dark";
+@use "variables";
+@use "variables-dark";
 
 // Import styles
-@import "@coreui/coreui-pro/scss/coreui";
-@import "@coreui/chartjs/scss/coreui-chartjs";
+//@use "@coreui/coreui-pro/scss/coreui";
+@use "@coreui/coreui-pro/scss/coreui";
+@use "@coreui/chartjs/scss/coreui-chartjs";
 
 // Vendors
-@import "vendors/calendar";
-@import "vendors/simplebar";
+@use "vendors/calendar";
+@use "vendors/simplebar";
 
 // Custom styles for this theme
-@import "theme";
+@use "theme";
 
 // If you want to add custom CSS you can put it here
-@import "custom";
+@use "custom";

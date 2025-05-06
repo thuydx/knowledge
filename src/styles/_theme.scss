@@ -1,13 +1,15 @@
+@use "@coreui/coreui-pro/scss/coreui" as coreui;
+
 body {
   background-color: var(--cui-tertiary-bg);
 }
 
 .wrapper {
   width: 100%;
-  @include ltr-rtl("padding-left", var(--cui-sidebar-occupy-start, 0));
-  @include ltr-rtl("padding-right", var(--cui-sidebar-occupy-end, 0));
+  @include coreui.ltr-rtl("padding-left", var(--cui-sidebar-occupy-start, 0));
+  @include coreui.ltr-rtl("padding-right", var(--cui-sidebar-occupy-end, 0));
   will-change: auto;
-  @include transition(padding .15s);
+  @include coreui.transition(padding .15s);
 }
 
 .header {
@@ -32,7 +34,7 @@ body {
 }
 
 .sidebar-toggler {
-  @include ltr-rtl("margin-left", auto);
+  @include coreui.ltr-rtl("margin-left", auto);
 }
 
 .sidebar-narrow,
@@ -57,8 +59,8 @@ body {
   --cui-sidebar-nav-link-active-bg: rgba(255, 255, 255, .0375);
 }
 
-@if $enable-dark-mode {
-  @include color-mode(dark) {
+@if coreui.$enable-dark-mode {
+  @include coreui.color-mode(dark) {
     body {
       background-color: var(--cui-dark-bg-subtle);
     }

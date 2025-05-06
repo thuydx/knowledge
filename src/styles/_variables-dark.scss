@@ -1,8 +1,10 @@
-$primary-dark:       desaturate($primary, 10%) !default;
-$success-dark:       desaturate($success, 10%) !default;
-$info-dark:          desaturate($info, 10%) !default;
-$warning-dark:       desaturate($warning, 10%) !default;
-$danger-dark:        desaturate($danger, 10%) !default;
+@use 'sass:color';
+@use 'variables';
+$primary-dark:       color.adjust(variables.$primary, $saturation: -10%) !default;
+$success-dark:       color.adjust(variables.$success, $saturation: -10%) !default;
+$info-dark:          color.adjust(variables.$info, $saturation: -10%) !default;
+$warning-dark:       color.adjust(variables.$warning, $saturation: -10%) !default;
+$danger-dark:        color.adjust(variables.$danger, $saturation: -10%) !default;
 
 $primary-text-emphasis-dark:    shade-color($primary-dark, 60%) !default;
 $success-text-emphasis-dark:    shade-color($success-dark, 60%) !default;
