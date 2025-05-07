@@ -22,13 +22,11 @@
     "@fullcalendar/timegrid": "^6.1",
     "@react-google-maps/api": "^2.20",
     "@reduxjs/toolkit": "^2.7",
-
     "@types/react": "^19.1",
     "@types/react-dom": "^19.1",
     "classnames": "^2.5",
     "eslint": "^9.26",
     "eslint-config-next": "^15.3",
-
     "next": "^15.3",
     "react": "^19.1",
     "react-dom": "^19.1",
@@ -41,10 +39,12 @@
     "@types/node": "^22.15",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/webpack": "^5.28.5",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
     "next-transpile-modules": "^10.0",
     "sass": "^1.87",
-    "typescript": "^5"
+    "typescript": "^5",
+    "webpack": "^5.99.8"
   }
 }
