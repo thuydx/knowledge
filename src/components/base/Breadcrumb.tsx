@@ -1,6 +1,5 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
-
 import { CBreadcrumb, CBreadcrumbItem } from '@coreui/react-pro'
 
 type breadcrumb = {
@@ -15,8 +14,8 @@ type route = {
 }
 
 const routeNames = [
-  { path: '/', name: 'Dashboard' },
-  { path: '/components/base/navs', name: 'Navs & Tabs' },
+  { path: '/', name: 'Knowledge' },
+  // { path: '/knowledge', name: 'Category' },
 ]
 
 const humanize = (text: string) => {
@@ -56,9 +55,9 @@ const Breadcrumb = () => {
   const lastBreadcrumb = breadcrumbs && breadcrumbs.pop()
   return (
     <>
-      <div className="fs-2 fw-semibold">{lastBreadcrumb && lastBreadcrumb.name}</div>
+      {/*<div className="fs-2 fw-semibold">{lastBreadcrumb && lastBreadcrumb.name}</div>*/}
       <CBreadcrumb className="mb-4">
-        <CBreadcrumbItem href="/">Home</CBreadcrumbItem>
+        <CBreadcrumbItem href="/">Knowledge Base</CBreadcrumbItem>
         {breadcrumbs &&
           breadcrumbs.map((breadcrumb, index) => {
             return (

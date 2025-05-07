@@ -49,26 +49,25 @@ const Header = (): JSX.Element => {
       <CContainer className="px-4" fluid>
         <CNav as="nav" variant="pills" className="flex-column flex-sm-row">
           <CNavItem>
-            <CNavLink href="#" active>
-              Active
-            </CNavLink>
+            <CNavLink href="/">Knowledge Base</CNavLink>
           </CNavItem>
-          <CDropdown variant="nav-item">
-            <CDropdownToggle color="secondary">Dropdown button</CDropdownToggle>
-            <CDropdownMenu>
-              <CDropdownItem href="#">Action</CDropdownItem>
-              <CDropdownItem href="#">Another action</CDropdownItem>
-              <CDropdownItem href="#">Something else here</CDropdownItem>
-            </CDropdownMenu>
-          </CDropdown>
-          <CNavItem>
-            <CNavLink href="#">Link</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#" disabled>
-              Disabled
-            </CNavLink>
-          </CNavItem>
+          {/*<CNavItem>*/}
+          {/*  <CNavLink href="/knowledge">Knowledge Base</CNavLink>*/}
+          {/*</CNavItem>*/}
+          {/*<CDropdown variant="nav-item">*/}
+          {/*  <CDropdownToggle color="secondary">Knowledge Base</CDropdownToggle>*/}
+          {/*  <CDropdownMenu>*/}
+          {/*    <CDropdownItem href="/category">Category</CDropdownItem>*/}
+          {/*    <CDropdownItem href="#">Another action</CDropdownItem>*/}
+          {/*    <CDropdownItem href="#">Something else here</CDropdownItem>*/}
+          {/*  </CDropdownMenu>*/}
+          {/*</CDropdown>*/}
+          {/*<CNavItem>*/}
+          {/*  <CNavLink href="/articles">Articles</CNavLink>*/}
+          {/*</CNavItem>*/}
+          {/*<CNavItem>*/}
+          {/*  <CNavLink href="/faq">FAQ</CNavLink>*/}
+          {/*</CNavItem>*/}
         </CNav>
         <CHeaderNav className="d-none d-md-flex ms-auto">
           <CForm className="d-none d-sm-flex">
