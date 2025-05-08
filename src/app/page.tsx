@@ -5,13 +5,10 @@ import {
   CCardHeader,
   CCardBody,
   CCardFooter,
-  CCardText,
-  CCardTitle,
   CCol,
   CRow,
   CListGroup,
   CListGroupItem,
-  CCardLink
 } from '@coreui/react-pro'
 import CIcon from "@coreui/icons-react";
 import * as icon from '@coreui/icons';

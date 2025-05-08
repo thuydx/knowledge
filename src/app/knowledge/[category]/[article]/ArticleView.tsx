@@ -1,27 +1,18 @@
+'use client';
+
+import { useParams } from 'next/navigation';
 import * as icon from "@coreui/icons";
 import {CButton, CCard, CCardBody, CCardFooter, CCardHeader, CCol, CListGroupItem, CRow} from "@coreui/react-pro";
 import CIcon from "@coreui/icons-react";
 import * as iconPro from "@coreui/icons-pro";
 import React from "react";
 
-export async function generateStaticParams() {
-  const paths = [
-    ['tech', 'react-hooks'],
-    ['tech', 'nextjs'],
-    ['tech', 'nextjs-routing'],
-    ['guides', 'typescript'],
-    ['guides', 'seo-tips'],
-    ['guides', 'deployment'],
-  ];
+export default function ArticleView() {
+  const params = useParams();
+  const segments = Array.isArray(params?.segments) ? params.segments : [];
+  const slug = segments.at(-1) ?? '';
+  const category = segments.slice(0, -1).join('/');
 
-  return paths.map((segments) => ({
-    segments,
-  }));
-}
-
-export default function ArticlePage({ params }: { params: { segments: string[] } }) {
-  const slug = params.segments.at(-1);
-  const category = params.segments.slice(0, -1).join('/');
   const tags = [
     'react',
     'nextjs',
@@ -93,27 +84,38 @@ export default function ArticlePage({ params }: { params: { segments: string[] }
               {knowledge.map((kb, idx) => (
                 <CCol xs key={idx}>
                   <CCard>
-                    <CCardHeader><CIcon icon={kb.icon} size="lg" className={'text-success'}/>
+                    <CCardHeader>
+                      <CIcon icon={kb.icon} size="lg" className={'text-success'}/>
                       <b> {kb.name}</b></CCardHeader>
                     <CCardBody>
                       {kb.description}
                     </CCardBody>
                     <CCardFooter>
                       <small className="text-body-secondary me-2">
-                        <CIcon icon={iconPro.cidPeople} size="sm" className="text-info me-1"/>{kb.author}</small>
+                        <CIcon icon={iconPro.cidPeople} size="sm" className="text-info me-1"/>
+                        {kb.author}</small>
                       <small className="text-body-secondary me-2">
-                        <CIcon icon={iconPro.cilCalendarAlt} size="sm" className="text-info me-1"/>{kb["created-date"]}</small>
+                        <CIcon icon={iconPro.cilCalendarAlt} size="sm" className="text-info me-1"/>
+                        {kb["created-date"]}</small>
                       <small className="text-body-secondary me-2">
-                        <CIcon icon={iconPro.cidCommentBubble} size="sm" className="text-info me-1"/>{kb["comments-number"]}</small>
+                        <CIcon icon={iconPro.cidCommentBubble} size="sm" className="text-info me-1"/>
+                        {kb["comments-number"]}</small>
                       <small className="text-body-secondary me-2">
-                        <CIcon icon={iconPro.cidViewStream} size="sm" className="text-info me-1"/>{kb["views-number"]}</small>
+                        <CIcon icon={iconPro.cidViewStream} size="sm" className="text-info me-1"/>
+                        {kb["views-number"]}</small>
                       <small className="text-body-secondary me-2">
-                        <CIcon icon={iconPro.cilThumbUp} size="sm" className="text-info me-1"/>{kb["likes-number"]}</small>
+                        <CIcon icon={iconPro.cilThumbUp} size="sm" className="text-info me-1"/>
+                        {kb["likes-number"]}</small>
                       <small className="text-body-secondary me-2">
-                        <CIcon icon={iconPro.cilThumbDown} size="sm" className="text-info me-1"/>{kb["dislikes-number"]}</small>
+                        <CIcon icon={iconPro.cilThumbDown} size="sm" className="text-info me-1"/>
+                        {kb["dislikes-number"]}</small>
                       {kb.tags.map((tag, aIdx) => (
                         <CButton color="secondary" key={aIdx} className="me-2">{tag}</CButton>
+                        // <div className="me-2">{tag}</div>
                       ))}
+                      <small className="text-body-secondary me-2">
+                        <CIcon icon={iconPro.cilThumbDown} size="sm" className="text-info me-1" key={slug}/>
+                        {category}</small>
                     </CCardFooter>
                   </CCard>
                 </CCol>
@@ -129,6 +131,7 @@ export default function ArticlePage({ params }: { params: { segments: string[] }
                   <CCardBody>
                     {articles.map((article, idx) => (
                       <CListGroupItem key={idx} as="a" href={article.link}>
+                      {/*<CListGroupItem key={idx}>*/}
                         <CIcon icon={article.icon} size="sm" className="text-info me-2"/>
                         {article.name}
                       </CListGroupItem>
@@ -144,6 +147,7 @@ export default function ArticlePage({ params }: { params: { segments: string[] }
                   <CCardBody>
                     {articles.map((article, idx) => (
                       <CListGroupItem key={idx} as="a" href={article.link}>
+                      {/*<CListGroupItem key={idx}>*/}
                         <CIcon icon={article.icon} size="sm" className="text-info me-2"/>
                         {article.name}
                       </CListGroupItem>
@@ -160,6 +164,7 @@ export default function ArticlePage({ params }: { params: { segments: string[] }
                   <CCardBody>
                     {tags.map((tag, idx) => (
                       <CButton color="secondary" key={idx} className="me-2 my-2">{tag}</CButton>
+                      // <div className="me-2">{tag}</div>
                     ))}
                   </CCardBody>
                 </CCard>

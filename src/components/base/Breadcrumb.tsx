@@ -52,7 +52,7 @@ const Breadcrumb = () => {
   const currentLocation = usePathname()
 
   const breadcrumbs = currentLocation && getBreadcrumbs(currentLocation)
-  const lastBreadcrumb = breadcrumbs && breadcrumbs.pop()
+  // const lastBreadcrumb = breadcrumbs && breadcrumbs.pop()
   return (
     <>
       {/*<div className="fs-2 fw-semibold">{lastBreadcrumb && lastBreadcrumb.name}</div>*/}
