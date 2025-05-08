@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Tech",
+    "icon": "cilBolt",
+    "description": "Tech knowledge",
+    "created-date": "2021-01-01",
+    "tags": ["react", "nextjs", "typescript"],
+    "author": "ThuyDX",
+    "comments-number": 12,
+    "views-number": 123,
+    "likes-number": 123,
+    "dislikes-number": 123
+  },
+  {
+    "name": "Guides",
+    "icon": "cilBook",
+    "description": "Guides knowledge",
+    "created-date": "2021-01-01",
+    "tags": ["react", "nextjs", "typescript"],
+    "author": "ThuyDX",
+    "comments-number": 12,
+    "views-number": 123,
+    "likes-number": 123,
+    "dislikes-number": 123
+  },
+  {
+    "name": "Articles",
+    "icon": "cilBook",
+    "description": "Articles knowledge",
+    "created-date": "2021-01-01",
+    "tags": ["react", "nextjs", "typescript"],
+    "author": "ThuyDX",
+    "comments-number": 12,
+    "views-number": 123,
+    "likes-number": 123,
+    "dislikes-number": 123
+  }
+
+]

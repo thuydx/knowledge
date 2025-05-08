@@ -1,9 +1,9 @@
 'use client'
 
 import '@/styles/style.scss'
-import {Header, Breadcrumb, Footer} from "@/components/base";
 import {CContainer} from '@coreui/react-pro'
-import AppProvider from '@/components/providers/AppProvider'
+import {Header, Breadcrumb, Footer} from "@/shared/components/base";
+import AppProvider from '@/shared/providers/AppProvider'
 import React from "react";
 
 export default function AppLayout({children}: { children: React.ReactNode }) {

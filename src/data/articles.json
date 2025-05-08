@@ -1,0 +1,54 @@
+[
+  {
+    "name": "React Hooks",
+    "icon": "cilCode",
+    "link": "/knowledge/tech/react-hooks",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.",
+    "created-date": "2021-01-01",
+    "tags": ["react", "nextjs", "typescript"],
+    "author": "ThuyDX",
+    "comments-number": 12,
+    "views-number": 123,
+    "likes-number": 123,
+    "dislikes-number": 123
+  },
+  {
+    "name": "Next.js Routing",
+    "icon": "cilArrowRight",
+    "link": "/knowledge/tech/nextjs-routing",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.",
+    "created-date": "2021-01-01",
+    "tags": ["react", "nextjs", "typescript"],
+    "author": "ThuyDX",
+    "comments-number": 12,
+    "views-number": 123,
+    "likes-number": 123,
+    "dislikes-number": 123
+  },
+  {
+    "name": "Deployment Guide",
+    "icon": "cilCloudUpload",
+    "link": "/knowledge/guides/deployment",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.",
+    "created-date": "2021-01-01",
+    "tags": ["react", "nextjs", "typescript"],
+    "author": "ThuyDX",
+    "comments-number": 12,
+    "views-number": 123,
+    "likes-number": 123,
+    "dislikes-number": 123
+  },
+  {
+    "name": "SEO Tips",
+    "icon": "cilChart",
+    "link": "/knowledge/guides/seo-tips",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.",
+    "created-date": "2021-01-01",
+    "tags": ["react", "nextjs", "typescript"],
+    "author": "ThuyDX",
+    "comments-number": 12,
+    "views-number": 123,
+    "likes-number": 123,
+    "dislikes-number": 123
+  }
+]

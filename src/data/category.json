@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Tech",
+    "icon": "cilBolt",
+    "link": "/knowledge/tech",
+    "articles": [
+      {
+        "name": "React Hooks",
+        "icon": "cilCode",
+        "link": "/knowledge/tech/react-hooks"
+      },
+      {
+        "name": "Next.js Routing",
+        "icon": "cilArrowRight",
+        "link": "/knowledge/tech/nextjs-routing"
+      }
+    ]
+  },
+  {
+    "name": "Guides",
+    "icon": "cilBook",
+    "link": "/knowledge/guides",
+    "articles": [
+      {
+        "name": "Deployment Guide",
+        "icon": "cilCloudUpload",
+        "link": "/knowledge/guides/deployment"
+      },
+      {
+        "name": "SEO Tips",
+        "icon": "cilChart",
+        "link": "/knowledge/guides/seo-tips"
+      }
+    ]
+  },
+  {
+    "name": "Tech",
+    "icon": "cilBolt",
+    "link": "/knowledge/tech",
+    "articles": [
+      {
+        "name": "React Hooks",
+        "icon": "cilCode",
+        "link": "/knowledge/tech/react-hooks"
+      },
+      {
+        "name": "Next.js Routing",
+        "icon": "cilArrowRight",
+        "link": "/knowledge/tech/nextjs-routing"
+      }
+    ]
+  },
+  {
+    "name": "Guides",
+    "icon": "cilBook",
+    "link": "/knowledge/guides",
+    "articles": [
+      {
+        "name": "Deployment Guide",
+        "icon": "cilCloudUpload",
+        "link": "/knowledge/guides/deployment"
+      },
+      {
+        "name": "SEO Tips",
+        "icon": "cilChart",
+        "link": "/knowledge/guides/seo-tips"
+      }
+    ]
+  },
+  {
+    "name": "Tech",
+    "icon": "cilBolt",
+    "link": "/knowledge/tech",
+    "articles": [
+      {
+        "name": "React Hooks",
+        "icon": "cilCode",
+        "link": "/knowledge/tech/react-hooks"
+      },
+      {
+        "name": "Next.js Routing",
+        "icon": "cilArrowRight",
+        "link": "/knowledge/tech/nextjs-routing"
+      }
+    ]
+  },
+  {
+    "name": "Guides",
+    "icon": "cilBook",
+    "link": "/knowledge/guides",
+    "articles": [
+      {
+        "name": "Deployment Guide",
+        "icon": "cilCloudUpload",
+        "link": "/knowledge/guides/deployment"
+      },
+      {
+        "name": "SEO Tips",
+        "icon": "cilChart",
+        "link": "/knowledge/guides/seo-tips"
+      }
+    ]
+  }
+]

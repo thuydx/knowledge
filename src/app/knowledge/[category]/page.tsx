@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryView from './CategoryView';
+import ListArticles from "@/features/acticles/components/ListArticles";
 
 export async function generateStaticParams() {
   return [
@@ -8,11 +8,9 @@ export async function generateStaticParams() {
   ];
 }
 
-export default async function CategoryPage({ params }: { params: any }) {
+export default async function CategoryPage() {
 
   return (
-    <main className="">
-      <CategoryView />
-    </main>
+      <ListArticles />
   );
 }
