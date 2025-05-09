@@ -1,6 +1,8 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import { CBreadcrumb, CBreadcrumbItem } from '@coreui/react-pro'
+import CIcon from "@coreui/icons-react";
+import * as icon from "@coreui/icons-pro";
 
 type breadcrumb = {
   pathname?: string
@@ -57,7 +59,9 @@ const Breadcrumb = () => {
     <>
       {/*<div className="fs-2 fw-semibold">{lastBreadcrumb && lastBreadcrumb.name}</div>*/}
       <CBreadcrumb className="mb-4">
-        <CBreadcrumbItem href="/">Knowledge Base</CBreadcrumbItem>
+        <CBreadcrumbItem href="/">
+          <CIcon icon={icon.cilHome} />
+        </CBreadcrumbItem>
         {breadcrumbs &&
           breadcrumbs.map((breadcrumb, index) => {
             return (

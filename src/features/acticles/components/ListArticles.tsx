@@ -2,9 +2,10 @@
 import { useParams } from 'next/navigation';
 import data from "@/data/articles.json"
 import * as iconPro from "@coreui/icons-pro";
-import {CCard, CCardBody, CCardFooter, CCardHeader, CCol, CRow, CLink} from "@coreui/react-pro";
+import {CCard, CCardBody, CCardFooter, CCardHeader, CCol, CRow, CLink, CButton} from "@coreui/react-pro";
 import CIcon from "@coreui/icons-react";
 import React from "react";
+import {Pagination} from "@/shared/components/base/Pagination";
 export default function ListArticles() {
   const params = useParams();
   const segments = Array.isArray(params?.segments) ? params.segments : [];
@@ -25,12 +26,29 @@ export default function ListArticles() {
                 {article.description}
               </CCardBody>
               <CCardFooter>
-                <small className="text-body-secondary">Last updated 3 mins ago</small>
+                <CRow xs={{cols: 1, gutter: 4}} md={{cols: 2}}>
+                  <CCol xs>
+                    <small className="text-body-secondary me-2">
+                      <CIcon icon={iconPro.cidPeople} size="sm" className="text-info me-1"/>
+                      {article.author}</small>
+                    <small className="text-body-secondary me-2">Last updated 3 mins ago</small>
+                    <small className="text-body-secondary me-2">
+                      <CIcon icon={iconPro.cilCalendarAlt} size="sm" className="text-info me-1"/>
+                      {article["created-date"]}</small>
+                    <small className="text-body-secondary me-2">
+                      <CIcon icon={iconPro.cidCommentBubble} size="sm" className="text-info me-1"/>
+                      {article["comments-number"]}</small>
+                  </CCol>
+                  <CCol xs className="d-flex justify-content-end">
+                    <CButton className="btn btn-sm btn-outline-secondary me-md-2" as="a" href={article.link}>Read more</CButton>
+                  </CCol>
+                </CRow>
               </CCardFooter>
             </CCard>
           </CCol>
         ))}
       </CRow>
+      <Pagination />
     </>
   );
 }

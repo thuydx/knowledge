@@ -65,9 +65,9 @@ const Header = (): JSX.Element => {
           {/*<CNavItem>*/}
           {/*  <CNavLink href="/articles">Articles</CNavLink>*/}
           {/*</CNavItem>*/}
-          {/*<CNavItem>*/}
-          {/*  <CNavLink href="/faq">FAQ</CNavLink>*/}
-          {/*</CNavItem>*/}
+          <CNavItem>
+            <CNavLink href="/faq">FAQ</CNavLink>
+          </CNavItem>
         </CNav>
         <CHeaderNav className="d-none d-md-flex ms-auto">
           <CForm className="d-none d-sm-flex">
