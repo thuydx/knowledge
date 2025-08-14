@@ -5,6 +5,7 @@ import {CContainer} from '@coreui/react-pro'
 import {Header, Breadcrumb, Footer} from "@/shared/components/base";
 import AppProvider from '@/shared/providers/AppProvider'
 import React from "react";
+import AppSidebar from "@/shared/components/knowledge/AppSidebar";
 
 export default function AppLayout({children}: { children: React.ReactNode }) {
   return (
@@ -14,6 +15,7 @@ export default function AppLayout({children}: { children: React.ReactNode }) {
     </head>
     <body>
     <AppProvider>
+      <AppSidebar />
       <div className="wrapper d-flex flex-column min-vh-100">
         <Header/>
         <div className="body flex-grow-1">

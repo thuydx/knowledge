@@ -8,21 +8,21 @@ import * as iconPro from "@coreui/icons-pro";
 
 export default function ListCategories() {
   const categories = data;
-  const iconMap: Record<string, any> = iconPro;
+  // const iconMap: Record<string, any> = iconPro;
   return (
     <>
       <CRow xs={{cols: 1, gutter: 4}} md={{cols: 3}}>
         {categories.map((category, idx) => (
           <CCol xs key={idx}>
             <CCard>
-              <CCardHeader><CIcon icon={iconMap[category.icon]} size="lg" className={'text-success me-2'}/>
+              <CCardHeader><CIcon icon={category.icon} size="lg" className={'text-success me-2'}/>
                 <CLink href={category.link} className={'link-info link-underline-opacity-0 '}><b>{category.name}</b></CLink>
               </CCardHeader>
               <CCardBody>
                 <CListGroup flush>
                   {category.articles.map((article, aIdx) => (
                     <CListGroupItem key={aIdx} as="a" href={article.link}>
-                      <CIcon icon={iconMap[article.icon]} size="sm" className="text-info me-2"/>
+                      <CIcon icon={category.icon} size="sm" className="text-info me-2"/>
                       {article.name}
                     </CListGroupItem>
                   ))}

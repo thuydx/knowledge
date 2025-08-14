@@ -9,7 +9,7 @@ import data from '@/data/articles.json';
 
 export default function PopularArticles() {
   const articles = data;
-  const iconMap: Record<string, any> = iconPro;
+  // const iconMap: Record<string, any> = iconPro;
   return (
     <>
       <CCard className="mb-4">
@@ -17,7 +17,7 @@ export default function PopularArticles() {
         <CCardBody>
           {articles.map((article, idx) => (
             <CListGroupItem key={idx} as="a" href={article.link}>
-              <CIcon icon={iconMap[article.icon]} size="sm" className="text-info me-2"/>
+              <CIcon icon={article.icon} size="sm" className="text-info me-2"/>
               {article.name}
             </CListGroupItem>
           ))}

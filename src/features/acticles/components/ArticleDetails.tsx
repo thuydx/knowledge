@@ -8,7 +8,7 @@ import data from "@/data/articles.json"
 export default function ArticleDetails() {
 
   const kb = data[0];
-  const iconMap: Record<string, any> = iconPro;
+  // const iconMap: Record<string, any> = iconPro;
 
   return (
     <>
@@ -16,7 +16,7 @@ export default function ArticleDetails() {
           <CCol xs>
             <CCard>
               <CCardHeader>
-                <CIcon icon={iconMap[kb.icon]} size="lg" className={'text-success'}/>
+                <CIcon icon={kb.icon} size="lg" className={'text-success'}/>
                 <b> {kb.name}</b></CCardHeader>
               <CCardBody>
                 {kb.description}
